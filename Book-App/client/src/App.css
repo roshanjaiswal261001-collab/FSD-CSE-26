@@ -1,0 +1,6 @@
+.bookstore{
+    display: flex;
+    flex-wrap: wrap;
+   row-gap: ; 
+    padding: 20px;
+}

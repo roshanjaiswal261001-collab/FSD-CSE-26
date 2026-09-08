@@ -1,0 +1,25 @@
+{
+  "name": "book-npm-app",
+  "version": "1.0.0",
+  "description": " my book app using npm",
+  "keywords": [
+    "ReactJs"
+  ],
+  "license": "ISC",
+  "author": "Roshan",
+  "type": "module",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^8.0.4",
+    "@babel/core": "^8.0.1",
+    "@babel/preset-react": "^8.0.1",
+    "parcel": "^2.16.4"
+  }
+}

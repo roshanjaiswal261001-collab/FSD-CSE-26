@@ -1,0 +1,33 @@
+.Card{
+width: 400px;
+height: 400px;
+background-color: #f0911c;
+border-radius: 20px;
+border: 2px solid #f10909;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.Card img{
+ margin: 10px;
+ padding: 10px;
+}
+.card h2{
+    margin: 5%;
+    padding: 5px;
+    color: #f40505;
+}
+.card h3{
+    margin: 5%;
+    padding: 5px;
+    color: #0cd4f8;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: #180202;
+    color: white;
+  
+    border-radius: 20px;
+}
