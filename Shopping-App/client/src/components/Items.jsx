@@ -1,14 +1,14 @@
-import "./Items.css"
-import"../assets/react.svg"
-const Items = (props) => {
+import image from '../assets/react.svg'
+import './Items.css'
+const Item = ({props}) => {
   return (
-    <div className="Card">
-      <img src={Image} width="100" height="100px" alt="Item Image" />
-      <h2>Title : {props.title}</h2>
-      <h3>Price: ₹{props.price}</h3>
-      <button className="btn">Add to Cart</button>
+    <div className='item'>
+        <img src={image}  width={100} height={100} alt="Item Image" />
+        <h2>Title: {props.title}</h2>
+        <h3>Price:₹{props.price}/-</h3>
+        <button className='btn'>AddToCart</button>
     </div>
   )
 }
 
-export default Items
+export default Item
