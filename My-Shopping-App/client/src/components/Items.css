@@ -2,7 +2,7 @@
     width:400px;
     height:400px;
     background-color: bisque;
-    border:2px solid rgb(200, 126, 126);
+    border:2px solid rgb(16, 119, 199);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -10,18 +10,18 @@
     align-items: center;
 }
 .item h2{
-    color: rgb(133, 201, 228);
+    color: rgb(225, 191, 191);
     margin:5px;
     padding:5px;
 }
 .item h3{
-    color: green;
+    color: rgb(191, 111, 26);
     margin:5px;
     padding:5px;
 }
 .btn{
     background-color: black;
-    color:white;
+    color:rgb(84, 66, 66);
     height: 50px;
     width: 120px;
     font-size: 20px;
