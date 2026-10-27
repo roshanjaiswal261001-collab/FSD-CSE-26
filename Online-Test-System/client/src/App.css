@@ -1,0 +1,302 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f5f9;
+  color: #222;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 650px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.login-card,
+.result-card {
+  max-width: 450px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+form {
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.primary-button {
+  background-color: #2563eb;
+  color: white;
+}
+
+.login-card .primary-button,
+.result-card .primary-button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.secondary-button {
+  background-color: #e5e7eb;
+  color: #222;
+}
+
+.submit-button {
+  background-color: #15803d;
+  color: white;
+}
+
+button:disabled {
+  background-color: #ddd;
+  color: #888;
+  cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+  opacity: 0.9;
+}
+
+.small-text {
+  color: #777;
+  font-size: 13px;
+  margin-top: 22px;
+}
+
+.test-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.test-header h1 {
+  margin-bottom: 5px;
+}
+
+.test-header p {
+  margin-top: 0;
+  color: #666;
+}
+
+.question-count {
+  color: #2563eb;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 7px;
+  background-color: #e5e7eb;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #2563eb;
+  transition: width 0.2s;
+}
+
+.test-card h2 {
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.options {
+  margin-top: 22px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.option input {
+  accent-color: #2563eb;
+}
+
+.option.selected {
+  border-color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  margin: 25px auto;
+  border: 6px solid #2563eb;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-circle h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.score-circle p {
+  margin-bottom: 0;
+  color: #666;
+}
+
+.result-details {
+  text-align: left;
+  margin: 25px 0;
+}
+
+.result-details div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 20px;
+  }
+
+  .test-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .test-card h2 {
+    font-size: 18px;
+  }
+
+  .button-row button {
+    padding: 10px 13px;
+  }
+}
+
+.dashboard {
+  max-width: 750px;
+}
+
+.dashboard h2 {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+.dashboard-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.dashboard-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.dashboard form {
+  margin-top: 25px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.dashboard form input,
+.dashboard form select {
+  width: 100%;
+  padding: 10px;
+  margin: 7px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dashboard form button {
+  margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+  .dashboard-item {
+    flex-direction: column;
+  }
+}
+
+.login-card select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  background: white;
+}
+
+.dashboard > button {
+  margin-top: 20px;
+}

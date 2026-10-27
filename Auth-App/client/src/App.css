@@ -1,0 +1,71 @@
+.app {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.stopwatch {
+  width: min(100%, 460px);
+  padding: 48px 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgb(15 23 42 / 10%);
+  text-align: center;
+}
+
+.stopwatch h1 {
+  margin: 0 0 28px;
+  font-size: 1.25rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 32px;
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(3.25rem, 12vw, 5rem);
+  font-weight: 650;
+  letter-spacing: -0.06em;
+}
+
+.timer span:last-child {
+  color: #64748b;
+  font-size: 0.58em;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn {
+  min-width: 120px;
+  padding: 14px 24px;
+  border: 0;
+  border-radius: 12px;
+  color: #fff;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 120ms ease, filter 120ms ease;
+}
+
+.btn:hover { filter: brightness(1.08); }
+.btn:active { transform: translateY(1px); }
+.start { background: #2563eb; }
+.stop { background: #e11d48; }
+.reset { background: #334155; }
+
+@media (max-width: 420px) {
+  .stopwatch { padding: 36px 20px; }
+  .controls { flex-direction: column; }
+  .btn { width: 100%; }
+}
